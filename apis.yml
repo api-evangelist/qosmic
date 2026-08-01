@@ -1,8 +1,22 @@
 aid: qosmic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qosmic.png
 name: QOSMIC
-description: 'QOSMIC is a company surfaced as a portfolio company of prosus-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'QOSMIC builds optical ground station infrastructure, a frontier-tech play backed by
+  prosus-ventures and tracked in the API Evangelist network. Its public presence (qosmic.space) is a
+  single-page marketing site with no documented API, developer portal, SDKs, or machine-readable
+  surface at the time of enrichment. This profile captures the company identity and probed domain
+  security posture; it remains a lead awaiting a public API before deeper artifact enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/qosmic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +26,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Frontier Tech
+- Optical Ground Station
+- Satellite Communications
+- Space Infrastructure
+- Quantum Communications
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/qosmic-domain-security.yml
 - type: Website
   url: https://qosmic.space
